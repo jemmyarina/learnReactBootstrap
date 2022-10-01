@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/6c7a888cd4.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./styles/fontawesome-free-6.2.0-desktop/">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <style>
+      
+    </style> -->
+  </head>
+  <body>
+    
+    <div id="app"></div>
+
+    <!-- REACT CODES ARE BELOW -->
+    <script type="text/babel">
+
+    function Head(){
+      return (
+        <div className="head">
+          <a href=""><img src="./img/hand_icon.png" alt="hand icon"/> RWANDA GIRLS INITIATIVE</a>  
+          <a href=""><img src="./img/student_icon.png" alt="student icon"/> ALUMNI</a>
+          <a href=""><img src="./img/members_icon.jpg" alt="members icon"/> BOARD MEMBERS</a>
+      </div>
+      );
+      
+
+    }
+    function Nav(){
+      return(
+        <div className="navigation">
+          <div className="navigationLeft"><img src="./img/student_icon.png" alt="school logo"/></div>
+          <div className="navigationMiddle">
+            <ul>
+              <li><a href="" className="active">ABOUT</a></li>
+              <li><a href="">ADMISSION</a></li>
+              <li><a href="">SCHOOL LIFE</a></li>
+              <li><a href="">ACADEMICS</a></li>
+              <li><a href="">ACHIVEMENTS</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+          <div className="navigationRight"> 
+            <div className="navigationRight1"> <a href="" className="alumniBtn">ALUMNI LOGIN</a></div>
+            <div className="navigationRight2"> 
+              <div class="fb"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="twt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    function Welcome(){
+      return(
+        <div className="section1">
+          <h1>WELCOME TO <br/>OUR SCHOOL.</h1>
+        </div>
+      ); 
+      
+    }
+    function Section(){
+      return(
+        <div className="text-bg-success p-3">
+          <ul className="row text-center mt-4 rowServices">
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-graduation-cap fs-1 mb-4 "></i><br/><p>Do you want to be challenged by great teachers who will expect much of you? Are you ready to discover your leadership potential and impact your community? Learn more about how to apply to our school.</p></li>
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-sun-o fs-1 mb-4"></i><br/><p>Gashora Girls work hard and have fun, too! Follow along with one of our students to learn more about a typical day in the life at Gashora.</p></li>
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-book fs-1 mb-4"></i><br/><p>We are committed to socio-economic diversity, and never want funding to hold any student back. Learn more about our scholarship program and the commitments we expect from our students’ families.</p></li>
+          </ul>
+        </div>
+      );
+    }
+    function section3(){
+
+    }
+    function section4(){
+
+    }
+    function section5(){
+
+    }
+    function section6(){
+
+    }
+    function section7(){
+
+    }
+    function footer() {
+
+    }
+    function App(){
+      return(
+        <div class="container-fluid">
+          <div id="head" ><Head /></div>
+          <div id="navigation"><Nav /></div>
+          <div id="section1"><Welcome /></div>
+          <div id="section2"><Section /></div>
+          <div> 
+            <nav className="navbar navbar-expand-lg bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Link</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="#">Action</a></li>
+            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><a className="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>  
+          </div>
+        </div>
+      );
+    }
+    // ReactDOM.render(<Head />, document.getElementById('head'));
+    // ReactDOM.render(<Nav />, document.getElementById('navigation'));
+    // ReactDOM.render(<Section1 />, document.getElementById('section1'));
+    ReactDOM.render(<App />, document.getElementById('app'));
+
+     
+    </script>
+
+  </body>
+</html>
