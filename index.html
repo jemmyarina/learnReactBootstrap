@@ -23,14 +23,18 @@
 
     function Head(){
       return (
-        <div className="head">
-          <a href=""><img src="./img/hand_icon.png" alt="hand icon"/> RWANDA GIRLS INITIATIVE</a>  
-          <a href=""><img src="./img/student_icon.png" alt="student icon"/> ALUMNI</a>
-          <a href=""><img src="./img/members_icon.jpg" alt="members icon"/> BOARD MEMBERS</a>
+      //   <div className="head">
+      //     <a href=""><img src="./img/hand_icon.png" alt="hand icon"/> RWANDA GIRLS INITIATIVE</a>  
+      //     <a href=""><img src="./img/student_icon.png" alt="student icon"/> ALUMNI</a>
+      //     <a href=""><img src="./img/members_icon.jpg" alt="members icon"/> BOARD MEMBERS</a>
+      // </div>
+      <div className="alert alert-warning alert-dismissible fade show head" role="alert">
+        <a href=""><img src="./img/hand_icon.png" alt="hand icon"/> RWANDA GIRLS INITIATIVE</a>
+        <a href=""><img src="./img/student_icon.png" alt="student icon"/> ALUMNI</a>
+        <a href=""><img src="./img/members_icon.jpg" alt="members icon"/> BOARD MEMBERS</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
       );
-      
-
     }
     function Nav(){
       return(
@@ -59,7 +63,7 @@
     function Welcome(){
       return(
         <div className="section1">
-          <h1>WELCOME TO <br/>OUR SCHOOL.</h1>
+          <h1 className="display-3 fw-bold">WELCOME TO <br/>OUR SCHOOL.</h1>
         </div>
       ); 
       
@@ -68,22 +72,61 @@
       return(
         <div className="text-bg-success p-3">
           <ul className="row text-center mt-4 rowServices">
-            <li className="col-lg-4 col-sm-12"><i class="fa fa-graduation-cap fs-1 mb-4 "></i><br/><p>Do you want to be challenged by great teachers who will expect much of you? Are you ready to discover your leadership potential and impact your community? Learn more about how to apply to our school.</p></li>
-            <li className="col-lg-4 col-sm-12"><i class="fa fa-sun-o fs-1 mb-4"></i><br/><p>Gashora Girls work hard and have fun, too! Follow along with one of our students to learn more about a typical day in the life at Gashora.</p></li>
-            <li className="col-lg-4 col-sm-12"><i class="fa fa-book fs-1 mb-4"></i><br/><p>We are committed to socio-economic diversity, and never want funding to hold any student back. Learn more about our scholarship program and the commitments we expect from our students’ families.</p></li>
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-graduation-cap fs-1 mb-4 "></i><br/><p>Do you want to be 
+              challenged by great teachers who will expect much of you? Are you ready to discover your leadership potential
+               and impact your community? Learn more about how to apply to our school.</p>
+               <button type="button" class="btn btn-secondary btn-lg btn-block">HOW TO APPLY</button></li>
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-sun-o fs-1 mb-4"></i><br/><p>SOS THS work hard and 
+              have fun, too! Follow along with one of our students to learn more about a typical day in the life at Gashora.</p>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">A DAY IN LIFE</button></li>
+            <li className="col-lg-4 col-sm-12"><i class="fa fa-book fs-1 mb-4"></i><br/><p>We are committed to socio-economic
+               diversity, and never want funding to hold any student back. Learn more about our scholarship program and
+                the commitments we expect from our students’ families.</p> 
+                <button type="button" class="btn btn-secondary btn-lg btn-block">ADMISSION</button></li>
           </ul>
         </div>
       );
     }
-    function section3(){
-
+    function Details(){
+     return( 
+      <div>
+        <ul className="section2 row d-flex justify-content-lg-center justify-content-sm-center 
+        align-items-lg-center align-items-sm-center flex-sm-wrap justify-content-lg-around justify-content-sm-around">
+          <li className=" col1 col-lg-2 col-sm-12 p-2 border d-flex justify-content-lg-center justify-content-sm-center 
+        align-items-lg-center align-items-sm-center flex-sm-wrap justify-content-lg-around justify-content-sm-around"><a href="#">Our Story</a></li>
+          <li className="col2 col-lg-2 col-sm-12 p-2 border d-flex justify-content-lg-center justify-content-sm-center 
+        align-items-lg-center align-items-sm-center flex-sm-wrap justify-content-lg-around justify-content-sm-around"><a href="#">Admission</a></li>
+          <li className="col3 col-lg-2 col-sm-12 p-2 border d-flex justify-content-lg-center justify-content-sm-center 
+        align-items-lg-center align-items-sm-center flex-sm-wrap justify-content-lg-around justify-content-sm-around"><a href="#">School Life</a></li>
+          <li className="col4 col-lg-2 col-sm-12 p-2 border d-flex justify-content-lg-center justify-content-sm-center 
+        align-items-lg-center align-items-sm-center flex-sm-wrap justify-content-lg-around justify-content-sm-around"><a href="#">University Counseling</a></li>
+        </ul> 
+      </div>
+      );
     }
-    function section4(){
-
-    }
-    function section5(){
-
-    }
+    // function Article(){
+    //   return(
+    //     <div>
+    //       <h1 className="text-center display-2 fw-bold">SOS THS ACHIEVEMENTS</h1>
+    //       <div class="card" style="width: 18rem;">
+    //         <img class="card-img-top" src="..." alt="Card image cap" />
+    //         <div class="card-body">
+    //           <h5 class="card-title">Card title</h5>
+    //           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    //           <a href="#" class="btn btn-primary">Read more</a>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   );
+    // }
+    // function Signup(){
+    //   return(
+    //     <div>
+    //       <div className="signup">
+    //       </div>
+    //     </div>
+    //   );
+    // }
     function section6(){
 
     }
@@ -96,48 +139,11 @@
     function App(){
       return(
         <div class="container-fluid">
-          <div id="head" ><Head /></div>
+          <div id="head"><Head /></div>
           <div id="navigation"><Nav /></div>
           <div id="section1"><Welcome /></div>
           <div id="section2"><Section /></div>
-          <div> 
-            <nav className="navbar navbar-expand-lg bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>  
-          </div>
+          <div id="details"><Details /></div>
         </div>
       );
     }

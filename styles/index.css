@@ -2,22 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     }
-    /* .container{
-      width: 100%;
-      height: 100vh;
-      background-color: rgb(102, 99, 99);
-    
-    } */
     .head{
       display: flex;
       justify-content: flex-end;
       align-items: center;
       gap: 50px;
-      font: 200px;
-      padding: 0 10px;
-      width: 100%;
-      height: 5vh;
-      background-color: white;
+      /* font: 200px; */
+      /* padding: 0 10px; */
+      /* width: 100%; */
+      /* height: 10vh; */
+      /* background-color: white; */
     }
 
     a img{
@@ -164,11 +158,9 @@
       background-position:center;
       background-size: cover;
     }
-    .section1>h1{
+    .section1>.display-3{
       margin-top: 40vh;
-      vertical-align: text-bottom;
       margin-left: 8%;
-      font-size: 70px;
       color: rgb(187, 31, 31);
       font-family: 'Verdana','Lucida Sans';
     }
@@ -176,4 +168,41 @@
       width: 100%;
       max-width: 800px;
       margin: 0 auto !important;
+    }
+    /* .rowServices li button{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    } */
+    .section2{
+      width: 100%;
+      height: 40vh;
+      /* background-color: rgb(21, 23, 24); */
+      margin: 20px auto!important;
+    }
+    .section2 .col-lg-2 {
+      height: 35vh;
+      width: 23%;
+    }
+    .section2 .col1{
+      background-image: url('../img/hand_icon.png');
+    }
+    .section2 .col2{
+      background-image: url('../img/members_icon.jpg');
+    }
+    .section2 .col3{
+      background-image: url('../img/student_icon.png');
+    }
+    .section2 .col4{
+      background-image: url('../img/studImage.jpg');
+    }
+    .section2 .col1,.col2, .col3, .col4{
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size: cover;
+    }
+    .signup{
+      width: 100%;
+      height: 40vh;
+      /* background-color: rgb(21, 23, 24); */
+      margin: 20px auto!important;
     }
