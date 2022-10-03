@@ -104,37 +104,56 @@
       </div>
       );
     }
-    // function Article(){
-    //   return(
-    //     <div>
-    //       <h1 className="text-center display-2 fw-bold">SOS THS ACHIEVEMENTS</h1>
-    //       <div class="card" style="width: 18rem;">
-    //         <img class="card-img-top" src="..." alt="Card image cap" />
-    //         <div class="card-body">
-    //           <h5 class="card-title">Card title</h5>
-    //           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    //           <a href="#" class="btn btn-primary">Read more</a>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // }
-    // function Signup(){
-    //   return(
-    //     <div>
-    //       <div className="signup">
-    //       </div>
-    //     </div>
-    //   );
-    // }
-    function section6(){
-
+    function Article(){
+      return(
+        <div>
+          <h1 className="text-center display-2 fw-bold">SOS THS ACHIEVEMENTS</h1>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      );
     }
-    function section7(){
-
+    function Signup(){
+      return(
+        <div>
+          <div className="signup">
+          </div>
+        </div>
+      );
     }
-    function footer() {
-
+    function Pics(){
+      return(
+        <div className="pictures">
+          <h1 className="text-center display-2 fw-bold">Follow Our Journey</h1>  
+          <div class="row d-flex ">
+            <div class="col1 col-2 p-2 bg-image d-flex justify-content-center align-items-center"></div>
+            <div class="col2 col-2 p-2"></div>
+            <div class="col3 col-2 p-2"></div>
+            <div class="col4 col-2 p-2"></div>
+            <div class="col5 col-2 p-2"></div>
+          </div>
+          <div class="row">
+            <div class="col6 col-2"> </div>
+            <div class="col7 col-2"> </div>
+            <div class="col8 col-2"> </div>
+            <div class="col9 col-2"> </div>
+            <div class="col10 col-2"> </div>
+          </div>
+        </div>
+      );
+    }
+    function Footer() {
+      return(
+        <div className=" footer bg-primary">
+          
+        </div>
+      );
     }
     function App(){
       return(
@@ -144,15 +163,14 @@
           <div id="section1"><Welcome /></div>
           <div id="section2"><Section /></div>
           <div id="details"><Details /></div>
+        
+          <div id="signup"><Signup /></div>
+          <div id="pictures"><Pics /></div>
+          <div id="footer"><Footer /></div>
         </div>
       );
     }
-    // ReactDOM.render(<Head />, document.getElementById('head'));
-    // ReactDOM.render(<Nav />, document.getElementById('navigation'));
-    // ReactDOM.render(<Section1 />, document.getElementById('section1'));
     ReactDOM.render(<App />, document.getElementById('app'));
-
-     
     </script>
 
   </body>
