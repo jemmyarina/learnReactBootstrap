@@ -139,12 +139,11 @@
               </div>
             </div>
           </div>  
-            <button type="" className=" btn btn-warning rounded-pill mx-auto mt-3"> SEE OUR ACHIVEMENTS</button>
+            <button type="" className=" btn btn-warning rounded-pill mx-auto mt-3 text-white"> SEE OUR ACHIVEMENTS</button>
         </div>
-
-        
       );
     }
+    
     function Signup(){
       return(
         <div>
@@ -174,6 +173,113 @@
         </div>
       );
     }
+    function Footer(){
+      return(
+        
+        <footer className="page-footer font-small special-color-dark pt-4 bg-success">
+          <div className="container">
+          
+          
+            <div className="row">
+            <div className="col-md-4 mb-4">
+              <p className=" ">You can inspire- and be inspired by- the biggest dreams and brightest mind in Rwanda  </p>
+            </div>
+            <div className="col-md-5 mb-4">
+              <form className="form-inline">
+                <input type="text" className="form-control form-control-sm mr-3 w-75"  placeholder="Search"aria-label="Search"/>
+                <i className="fas fa-search" aria-hidden="true"></i>
+              </form>
+            </div>
+            <div class="col-3 d-flex justify-content-center gap-4 mb-3">
+              <a class="fb-ic" href="#">
+                <i class="fab fa-facebook-f fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <a class="tw-ic" href="#">
+                <i class="fab fa-twitter fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+            </div>
+          </div>
+         
+
+          <div class="row">
+            <div className="col-md-5 mb-4">
+              <form className="input-group">
+                <input type="text" className="form-control form-control-sm mr-3 w-75" placeholder="Your email"
+                  aria-label="Your email" aria-describedby="basic-addon2"/>
+                <div className="input-group-append">
+                  <button className="btn btn-warning rounded-pill mx-auto mt-3 text-white" type="button">JOIN THE MOVEMENT</button>
+                </div>
+              </form>
+            </div>
+            <div className="col-md-2 mx-auto">
+              <ul className="list-unstyled d-flex flex-column">
+                <li>
+                  <a href="#!">About</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+                <li>
+                  <a href="#!">Admission</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+                <li>
+                  <a href="#!">School life</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+              </ul>
+            </div>
+            <div className="col-md-2 mx-auto">
+              <ul className="list-unstyled d-flex flex-column">
+                <li>
+                  <a href="#!">Academics</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+                <li>
+                  <a href="#!">Special events</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+                <li>
+                  <a href="#!">Alumni</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+              </ul>
+            </div>
+            <div className="col-md-2 mx-auto">
+              <ul className="list-unstyled d-flex flex-column">
+                <li>
+                  <a href="#!">Blog</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+                <li>
+                  <a href="#!">Contact us</a>
+                </li>
+                <hr className="clearfix w-100 d-md-none my-1"/>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="card mb-3 w-50">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="../img/sos_logo.png" class="img-fluid rounded-start" alt="SOS logo"/>
+              </div>
+              <div class="col-md-8 text-sx-center">
+                <div class="card-body">
+                  <h5 class="card-title">Our Address</h5>
+                  <p class="card-text">P.O BOX 000<br/> Kigali Rwanda</p>
+                  <p class="card-text">Email: sos-ths@soscv.org.rw</p>
+                  <p class="card-text"><small class="text-muted">Tel:0788434343</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div className="footer-copyright text-center py-3">SOS Technical High School  |  2022  |  Site designed by N.Jemima 
+        </div>
+        </footer>
+      );
+    }
     function App(){
       return(
         <div className="container-fluid">
@@ -185,10 +291,12 @@
           <div id="article"><Article /></div>
           <div id="signup"><Signup /></div>
           <div id="pictures"><Pics /></div>
+          <div id="footer"><Footer /></div>
          
         </div>
       );
     }
+    
     ReactDOM.render(<App />, document.getElementById('app'));
     </script>
 

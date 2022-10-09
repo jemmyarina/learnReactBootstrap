@@ -1,259 +1,250 @@
-* {
-    box-sizing: border-box;
+.head{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  }
+
+  a img{
+    width: 30px;
+  }
+  div>img{
+    width: 200px;
+    height: 120px;
+    padding-top: 10px;
+  }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(4, 95, 60);
+    /* position: fixed;
+    top:10vh; */
+    position: sticky;
+    top: 0;
+  }
+  div>ul{
+    list-style-type: none;
     margin: 0;
-    }
-    .head{
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 50px;
-      /* font: 200px; */
-      /* padding: 0 10px; */
-      /* width: 100%; */
-      /* height: 10vh; */
-      /* background-color: white; */
-    }
+    padding: 0;
+    /* border: 1px solid #555; */
 
-    a img{
-      width: 30px;
-    }
-    div>img{
-      width: 200px;
-      height: 120px;
-      padding-top: 10px;
-    }
-    .navigation{
-      display: flex;
-      justify-content: center;
-      align-content: center ;
-      width: 100%;
-      height: 20vh;
-      background-color: rgb(4, 95, 60);
-      /* position: fixed;
-      top:10vh; */
-      position: sticky;
-      top: 0;
-    }
-    div>ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      /* border: 1px solid #555; */
+  }
+  li{
+    float: left;
+  }
+  .navigation li a {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 120px;
+  height: 50px;
+  /* padding: 10px 5px 8px; */
+  background-color: #143324;
+  color:rgb(224, 155, 26);
+  text-decoration: none;
+  /* text-align: center; */
 
-    }
-    li{
-      float: left;
-    }
-    .navigation li a {
-    /* display: block; */
+  }
+  .navigationMiddle li{
+    border-right: 1px solid #bbb;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  .active {
+    background-color: #16cea6;
+  }
+  li a:hover:not(.active){
+    background-color: #555;
+  }
+  li a:hover(.active){
+    background-color: none;
+  }
+  .navigationLeft{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 120px;
-    height: 50px;
-    /* padding: 10px 5px 8px; */
-    background-color: #143324;
-    color:rgb(224, 155, 26);
-    text-decoration: none;
-    /* text-align: center; */
-
-    }
-    .navigationMiddle li{
-      border-right: 1px solid #bbb;
-    }
-    li:last-child {
-      border-right: none;
-    }
-    .active {
-      background-color: #16cea6;
-    }
-    li a:hover:not(.active){
-      background-color: #555;
-    }
-    li a:hover(.active){
-      background-color: none;
-    }
-    .navigationLeft{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 20%;
-    }
-    .navigationMiddle{
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 55%;
-    }
-    .navigationRight{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25%;
-    }
-    .navigationRight1{
-      display: flex;
-      justify-content:  center;
-      align-items: center;
-      width: 60%;
-      height: 20vh;
-    }
-    .navigationRight2{
-      display: flex;
-      width: 40%;
-      height: 20vh;
-    }
-    .navigationRight2 .fb{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 25%;
-      height: 20vh;
-    }
-    .navigationRight2 .twt{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 75%;
-      height: 20vh;
-    }
-    .navigationRight2 .fa-brands{
-      color:rgb(236, 236, 240);
-      font-size: 30px;
-    }
-    .navigationRight2 .fa-twitter{
-      color:rgb(244, 244, 250);
-      font-size: 30px;
-      
-    }
-    .alumniBtn{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: orange;
-      width: 170px;
-      height: 40px;
-      color: white;
-      font-weight: bolder;
-      border-radius: 50px;
-    }
-    .section1{
-      display: flex;
-      width: 100%;
-      height: 70vh;
-      background-color: #555;
-      background-image: url('../img/studImage.jpg');
-      background-repeat: no-repeat;
-      background-position:center;
-      background-size: cover;
-    }
-    .section1>.display-3{
-      margin-top: 40vh;
-      margin-left: 8%;
-      color: rgb(187, 31, 31);
-      font-family: 'Verdana','Lucida Sans';
-    }
-    .rowServices{
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto !important;
-    }
-    /* .rowServices li button{
-      margin-top: 30px;
-      margin-bottom: 30px;
-    } */
-
-     /* Details component */
-    .section2{
-      width: 100%;
-      /* height: 40vh; */
-      /* background-color: rgb(21, 23, 24); */
-      margin: 20px auto!important;
-    }
-    .section2 .col-lg-2 {
-      height: 35vh;
-      /* width: 23%; */
-    }
-    .section2 .col1{
-      background-image: url('../img/hand_icon.png');
-    }
-    .section2 .col2{
-      background-image: url('../img/members_icon.jpg');
-    }
-    .section2 .col3{
-      background-image: url('../img/student_icon.png');
-    }
-    .section2 .col4{
-      background-image: url('../img/studImage.jpg');
-    }
-    .section2 .col1,.col2, .col3, .col4{
-      background-repeat: no-repeat;
-      background-position:center;
-      background-size: cover;
-    }
-    .section2 li{
-      width: 250px;
-      
-    }
-    /* Signup component */
-    .signup{
-      width: 100%;
-      height: 40vh;
-      background-color: rgb(34, 84, 109);
-      margin: 20px auto!important;
-    }
-
-    .pictures{
-      width: 100%;
-      height: 90vh;
-      background-color: rgb(207, 104, 202);
-      margin: 20px auto!important;
-    }
-    .pictures .col-2 {
-      height: 30vh;
-      width: 17.7%;
-      background-color: rgb(33, 90, 25);
-      /* margin: 10px 0 10px; */
-      margin: 10px auto;
-    }
+    width: 20%;
+  }
+  .navigationMiddle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55%;
+  }
+  .navigationRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .navigationRight1{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    width: 60%;
+    height: 20vh;
+  }
+  .navigationRight2{
+    display: flex;
+    width: 40%;
+    height: 20vh;
+  }
+  .navigationRight2 .fb{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    height: 20vh;
+  }
+  .navigationRight2 .twt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    height: 20vh;
+  }
+  .navigationRight2 .fa-brands{
+    color:rgb(236, 236, 240);
+    font-size: 30px;
+  }
+  .navigationRight2 .fa-twitter{
+    color:rgb(244, 244, 250);
+    font-size: 30px;
     
-    .pictures .col1{
-      background-image: url('../img/hand_icon.png');
-    }
-    .pictures .col2{
-      background-image: url('../img/members_icon.jpg');
-    }
-    .pictures .col3{
-      background-image: url('../img/student_icon.png');
-    }
-    .pictures .col4{
-      background-image: url('../img/studImage.jpg');
-    }
-    .pictures .col5{
-      background-image: url('../img/studImage.jpg');
-    }
-    .pictures .col6{
-      background-image: url('../img/hand_icon.png');
-    }
-    .pictures .col7{
-      background-image: url('../img/student_icon.png');
-    }
-    .pictures .col8{
-      background-image: url('../img/student_icon.png');
-    }
-    .pictures .col9{
-      background-image: url('../img/studImage.jpg');
-    }
-    .pictures .col10{
-      background-image: url('../img/studImage.jpg');
-    }
-    .pictures .col1, .pictures .col2, .pictures .col3, .pictures .col4, .pictures .col5, .pictures .col6, .pictures .col7,.pictures .col8, .pictures .col9, .pictures .col10 {
-      background-repeat: no-repeat;
-      background-position:center;
-      background-size: cover;
-    }
-    .footer{
-      width: 100%;
-      height: 60vh;
-    }
+  }
+  .alumniBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50px;
+  }
+  .section1{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #555;
+    background-image: url('../img/studImage.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+  }
+  .section1>.display-3{
+    margin-top: 40vh;
+    margin-left: 8%;
+    color: rgb(187, 31, 31);
+    font-family: 'Verdana','Lucida Sans';
+  }
+  .rowServices{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto !important;
+  }
+  /* .rowServices li button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  } */
+
+   /* Details component */
+  .section2{
+    width: 100%;
+    /* height: 40vh; */
+    /* background-color: rgb(21, 23, 24); */
+    margin: 20px auto!important;
+  }
+  .section2 .col-lg-2 {
+    height: 35vh;
+    /* width: 23%; */
+  }
+  .section2 .col1{
+    background-image: url('../img/hand_icon.png');
+  }
+  .section2 .col2{
+    background-image: url('../img/members_icon.jpg');
+  }
+  .section2 .col3{
+    background-image: url('../img/student_icon.png');
+  }
+  .section2 .col4{
+    background-image: url('../img/studImage.jpg');
+  }
+  .section2 .col1,.col2, .col3, .col4{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+  }
+  .section2 li{
+    width: 250px;
+    
+  }
+  /* Signup component */
+  .signup{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(34, 84, 109);
+    margin: 20px auto!important;
+  }
+
+  .pictures{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(207, 104, 202);
+    margin: 20px auto!important;
+  }
+  .pictures .col-2 {
+    height: 30vh;
+    width: 17.7%;
+    background-color: rgb(33, 90, 25);
+    /* margin: 10px 0 10px; */
+    margin: 10px auto;
+  }
+  
+  .pictures .col1{
+    background-image: url('../img/hand_icon.png');
+  }
+  .pictures .col2{
+    background-image: url('../img/members_icon.jpg');
+  }
+  .pictures .col3{
+    background-image: url('../img/student_icon.png');
+  }
+  .pictures .col4{
+    background-image: url('../img/studImage.jpg');
+  }
+  .pictures .col5{
+    background-image: url('../img/studImage.jpg');
+  }
+  .pictures .col6{
+    background-image: url('../img/hand_icon.png');
+  }
+  .pictures .col7{
+    background-image: url('../img/student_icon.png');
+  }
+  .pictures .col8{
+    background-image: url('../img/student_icon.png');
+  }
+  .pictures .col9{
+    background-image: url('../img/studImage.jpg');
+  }
+  .pictures .col10{
+    background-image: url('../img/studImage.jpg');
+  }
+  .pictures .col1, .pictures .col2, .pictures .col3, .pictures .col4, .pictures .col5, .pictures .col6, .pictures .col7,.pictures .col8, .pictures .col9, .pictures .col10 {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+  }
+  .footer{
+    width: 100%;
+    height: 60vh;
+  }
